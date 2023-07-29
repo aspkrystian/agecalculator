@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <p class="title">Enter your date of birth</p>
+      <div class="line"></div>
+      <div class="date">
+        <div class="left">
+          <p><b>DAY</b></p>
+          <form>
+            <input placeholder="DD" type="number" class="day" id="day" required />
+          </form>
+        </div>
+        <div class="middle">
+          <p><b>MONTH</b></p>
+          <form>
+            <input placeholder="MM" type="number" class="month" id="month" required />
+          </form>
+          <!-- <span class="error"></span> -->
+        </div>
+        <div class="right">
+          <p><b>YEAR</b></p>
+          <form>
+            <input placeholder="YYYY" type="number" class="year" id="year" required />
+          </form>
+          <!-- <span class="error"></span> -->
+        </div>
+      </div>
+      <p class="error" id="error"></p>
+
+      <div class="line"></div>
+      <button class="button">
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+        <span class="circle3"></span>
+        <span class="circle4"></span>
+        <span class="circle5"></span>
+        <span class="text">Submit</span>
+      </button>
+      <div class="result">
+        <div class="year-output"><p class="purple">--</p><p class="result-edit"> years
+        </p></div>
+        <div class="month-output"><p class="purple">--</p><p class="result-edit"> 
+          months </p></div>
+        <div class="day-output"><p class="purple">--</p><p class="result-edit"> days</p></div>
+      </div>
+    </div>
+  </body>
+</html>
